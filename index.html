@@ -198,7 +198,8 @@
     .quotes-list li:last-child { margin-bottom: 0; }
     .quote-who { color: var(--text); font-weight: 700; }
     .quote-what { color: #c8c8e0; }
-    .quote-src { color: #a0a0e8; font-size: 0.78em; margin-left: 0.2rem; }
+    .quote-src { color: #a0a0e8; font-size: 0.78em; margin-left: 0.2rem; text-decoration: none; border-bottom: 1px dotted rgba(160,160,232,0.6); }
+    .quote-src:hover { color: #c6c6ff; border-bottom-color: rgba(198,198,255,0.8); }
 
     .quotes-sources {
       margin-top: 0.8rem;
@@ -444,16 +445,16 @@
               Quotes are included for context and may be lightly edited for brevity. Source links are listed below.
             </p>
             <ul class="quotes-list">
-              <li><span class="quote-who">Geoffrey Hinton:</span> <span class="quote-what">“I think it’s somewhere between 10% and 20% chance that it will wipe us out.”</span><span class="quote-src">[1]</span></li>
-              <li><span class="quote-who">Yoshua Bengio:</span> <span class="quote-what">Bengio gave an estimate around 20% probability of catastrophic outcomes (p(doom)).</span><span class="quote-src">[2]</span></li>
-              <li><span class="quote-who">Dario Amodei:</span> <span class="quote-what">Amodei has discussed p(doom) in roughly the 10%-25% range and explicitly addressed existential-risk scenarios.</span><span class="quote-src">[3]</span></li>
-              <li><span class="quote-who">Elon Musk:</span> <span class="quote-what">“It’s most likely going to be great and there’s some chance — which could be 10% to 20% — that it goes bad.”</span><span class="quote-src">[4]</span></li>
+              <li><span class=”quote-who”>Geoffrey Hinton (Godfather of AI, Nobel Prize winner):</span> <span class=”quote-what”>”I think it’s somewhere between 10% and 20% chance that it will wipe us out.”</span><a class=”quote-src” href=”#src-1”>[1]</a></li>
+              <li><span class=”quote-who”>Yoshua Bengio (Turing Award winner):</span> <span class=”quote-what”>Bengio gave an estimate around 20% probability of catastrophic outcomes (p(doom)).</span><a class=”quote-src” href=”#src-2”>[2]</a></li>
+              <li><span class=”quote-who”>Dario Amodei (CEO of Anthropic):</span> <span class=”quote-what”>Amodei has discussed p(doom) in roughly the 10%-25% range and explicitly addressed existential-risk scenarios.</span><a class=”quote-src” href=”#src-3”>[3]</a></li>
+              <li><span class=”quote-who”>Elon Musk (CEO of Tesla &amp; SpaceX):</span> <span class=”quote-what”>”It’s most likely going to be great and there’s some chance — which could be 10% to 20% — that it goes bad.”</span><a class=”quote-src” href=”#src-4”>[4]</a></li>
             </ul>
             <div class="quotes-sources">
-              <a href="https://www.theguardian.com/technology/2024/dec/27/godfather-of-ai-raises-odds-of-the-technology-wiping-out-humanity-over-next-30-years" target="_blank" rel="noopener noreferrer">[1] Guardian (Hinton)</a>
-              <a href="https://www.abc.net.au/news/2023-07-15/whats-your-pdoom-ai-researchers-worry-catastrophe/102591340" target="_blank" rel="noopener noreferrer">[2] ABC News (Bengio ~20% p(doom))</a>
-              <a href="https://x.com/liron/status/1710520914444718459" target="_blank" rel="noopener noreferrer">[3] X post (Amodei ~10%-25%)</a>
-              <a href="https://www.youtube.com/watch?v=akXMYvKjUxM" target="_blank" rel="noopener noreferrer">[4] YouTube (Musk ~10%-20%)</a>
+              <a id="src-1" href="https://www.theguardian.com/technology/2024/dec/27/godfather-of-ai-raises-odds-of-the-technology-wiping-out-humanity-over-next-30-years" target="_blank" rel="noopener noreferrer">[1] Guardian (Hinton)</a>
+              <a id="src-2" href="https://www.abc.net.au/news/2023-07-15/whats-your-pdoom-ai-researchers-worry-catastrophe/102591340" target="_blank" rel="noopener noreferrer">[2] ABC News (Bengio ~20% p(doom))</a>
+              <a id="src-3" href="https://x.com/liron/status/1710520914444718459" target="_blank" rel="noopener noreferrer">[3] X post (Amodei ~10%-25%)</a>
+              <a id="src-4" href="https://www.youtube.com/watch?v=akXMYvKjUxM" target="_blank" rel="noopener noreferrer">[4] YouTube (Musk ~10%-20%)</a>
             </div>
           </details>
         </div>
@@ -521,7 +522,7 @@
       </div>
     </div>
 
-    <footer>Votes are deduplicated per browser — results may not reflect a scientifically representative sample.</footer>
+    <footer></footer>
   </div>
 
   <script type="module">
